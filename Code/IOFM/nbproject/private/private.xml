@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/application/CategoriesController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>280</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/application/VagueFileDiscovery.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>114</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/AASS/IOFM/src/application/ExtModifyController.java</file>
+            <file>file:/D:/AASS/IOFM/src/application/SearchPopupController.java</file>
+            <file>file:/D:/AASS/IOFM/src/application/CategoriesController.java</file>
+            <file>file:/D:/AASS/IOFM/src/application/DbModel.java</file>
+        </group>
+    </open-files>
+</project-private>

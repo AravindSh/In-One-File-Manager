@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchPopupController">
+   <top>
+      <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="43.0" text="default" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Separator fx:id="sp" maxWidth="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="NEVER" />
+            <HBox fx:id="hb" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="40.0" spacing="5.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="sLb" prefHeight="37.0" prefWidth="103.0" text="Search Here" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="searchF" prefHeight="37.0" prefWidth="245.0" promptText="Search it here" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Region prefHeight="39.0" prefWidth="455.0" HBox.hgrow="ALWAYS" />
+                  <Label prefHeight="37.0" prefWidth="60.0" text="TOTAL:">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="count" prefHeight="34.0" prefWidth="81.0" text="00">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <Separator maxWidth="1.7976931348623157E308" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tcFname" prefWidth="779.6666870117188" text="Name" />
+          <TableColumn fx:id="tcExt" prefWidth="243.33331298828125" text="Extension" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         
+      </TableView>
+   </center>
+</BorderPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CategoriesController">
+   <top>
+      <VBox prefHeight="38.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar style="-fx-font-size: 16;" VBox.vgrow="NEVER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem fx:id="editExt" mnemonicParsing="false" onAction="#modifyExt" text="Preferences" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Rename">
+                  <items>
+                    <MenuItem fx:id="pdfRenWindow" mnemonicParsing="false" onAction="#openpdfRenaming" text="Possible PDFs" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Separator>
+               <effect>
+                  <SepiaTone level="0.62" />
+               </effect></Separator>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <SplitPane fx:id="splitLeft" dividerPositions="0.5" maxWidth="-Infinity" orientation="VERTICAL" prefWidth="258.0" BorderPane.alignment="CENTER">
+         <items>
+            <ScrollPane prefViewportHeight="416.0" prefViewportWidth="235.0">
+               <content>
+                  <VBox fx:id="dirVbox" minHeight="-Infinity" minWidth="-Infinity">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="235.0" text="Directories">
+                           <font>
+                              <Font name="Calibri Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+                     </children>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane prefViewportHeight="349.0" prefViewportWidth="256.0">
+               <content>
+                  <VBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="235.0" text="Spotlight">
+                           <font>
+                              <Font name="Calibri Bold" size="30.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+                        <VBox spacing="10.0">
+                           <children>
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dupHandler" prefHeight="46.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Duplicate" />
+                              <Button mnemonicParsing="false" onAction="#wHandler" prefHeight="46.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Watched" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#nwHandler" prefHeight="46.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Not Watched" />
+                              <Button mnemonicParsing="false" onAction="#starHandle" prefHeight="46.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Starred" />
+                              <Button mnemonicParsing="false" onAction="#backupHandle" prefHeight="46.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Backup" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </left>
+   <center>
+      <Accordion fx:id="accordion" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="3.0" left="1.0" right="3.0" />
+         </padding>
+         <panes>
+            <TitledPane fx:id="titledDoc" expanded="false" prefHeight="595.0" prefWidth="1355.0" text="Documents">
+               <content>
+                  <ListView fx:id="lvDoc" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 15;" />
+               </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledAud" expanded="false" text="Audio">
+               <content>
+                  <ListView fx:id="lvAud" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 15;" />
+               </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledVid" expanded="false" text="Video">
+               <content>
+                  <ListView fx:id="lvVid" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 15;" />
+               </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledImg" expanded="false" layoutX="10.0" layoutY="106.0" text="Images">
+               <content>
+                  <ListView fx:id="lvImg" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 15;" />
+               </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledExec" expanded="false" layoutX="10.0" layoutY="154.0" text="Executables">
+               <content>
+                  <ListView fx:id="lvExec" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 15;" />
+               </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="titledOthers" expanded="false" layoutX="11.0" layoutY="166.0" text="Others">
+               <content>
+                  <ListView fx:id="lvOthers" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 15;" />
+               </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+         </panes>
+      </Accordion>
+   </center>
+</BorderPane>

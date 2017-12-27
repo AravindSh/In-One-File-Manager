@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IOFM.jnlp">
+  <information>
+    <title>IOFM</title>
+    <vendor>ARAVIND</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="IOFM.jar" size="86584" download="eager" />
+    <jar href="lib\itext-pdfa-5.5.9-javadoc.jar" size="476210" download="eager" />
+    <jar href="lib\itext-pdfa-5.5.9-sources.jar" size="126192" download="eager" />
+    <jar href="lib\itext-pdfa-5.5.9.jar" size="117922" download="eager" />
+    <jar href="lib\itext-xtra-5.5.9-javadoc.jar" size="364739" download="eager" />
+    <jar href="lib\itext-xtra-5.5.9-sources.jar" size="128778" download="eager" />
+    <jar href="lib\itext-xtra-5.5.9.jar" size="119941" download="eager" />
+    <jar href="lib\itextpdf-5.5.9-javadoc.jar" size="5554301" download="eager" />
+    <jar href="lib\itextpdf-5.5.9-sources.jar" size="2344632" download="eager" />
+    <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.8.11.2.jar" size="5575351" download="eager" />
+    <jar href="lib\xmlworker-5.5.9-javadoc.jar" size="1158391" download="eager" />
+    <jar href="lib\xmlworker-5.5.9-sources.jar" size="368873" download="eager" />
+    <jar href="lib\xmlworker-5.5.9.jar" size="251792" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="IOFM" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="application.StartApp"  name="IOFM" />
+  <update check="always"/>
+</jnlp>

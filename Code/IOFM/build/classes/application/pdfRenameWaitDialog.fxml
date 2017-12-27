@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="519.0" spacing="8.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PdfRenameWaitDialogController">
+   <children>
+      <Label alignment="CENTER" prefHeight="39.0" prefWidth="519.0" text="LOADING">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ProgressIndicator prefHeight="81.0" prefWidth="519.0" />
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="519.0">
+         <children>
+            <Button fx:id="cancelB" alignment="CENTER" mnemonicParsing="false" onAction="#handleCancelB" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/IOFM.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itext-pdfa-5.5.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itext-pdfa-5.5.9-sources.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itext-pdfa-5.5.9.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itext-xtra-5.5.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itext-xtra-5.5.9-sources.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itext-xtra-5.5.9.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itextpdf-5.5.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itextpdf-5.5.9-sources.jar"/>
+	<classpathentry kind="lib" path="dist/lib/itextpdf-5.5.9.jar"/>
+	<classpathentry kind="lib" path="dist/lib/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/xmlworker-5.5.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="dist/lib/xmlworker-5.5.9-sources.jar"/>
+	<classpathentry kind="lib" path="dist/lib/xmlworker-5.5.9.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
