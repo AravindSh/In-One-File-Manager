@@ -1,20 +1,21 @@
 # In-One-File-Manager
 
-ABOUT:
+## ABOUT ##
 Desktop File Manager for Windows
 
-TECHNOLOGIES USED: Java, JavaFX, iText, Jsoup, Netbeans IDE
+## TECHNOLOGIES USED: ## 
+Java, JavaFX, iText, Jsoup, Netbeans IDE
 
-DESCRIPTION:	
+## DESCRIPTION ##
 
--> Desktop Application for Windows
+* Desktop Application for Windows
 
--> Categorized view of files in file system
+* Categorized view of files in file system
 
--> Extremely Fast Search based on filenames and paths stored in Embedded Database
+* Extremely Fast Search based on filenames and paths stored in Embedded Database
 
--> Listing Vaguely Named PDF’s and Renaming Suggestions using Title Extraction
+* Listing Vaguely Named PDF’s and Renaming Suggestions using Title Extraction
 
--> Listing Watched and Unwatched videos and Duplicate files 
+* Listing Watched and Unwatched videos and Duplicate files 
 
 [DESIGN DOCUMENTS](https://github.com/AravindSh/In-One-File-Manager/tree/master/Design-Documents-pdf)
