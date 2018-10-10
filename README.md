@@ -18,4 +18,5 @@ Java, JavaFX, iText, Jsoup, Netbeans IDE
 
 * Listing Watched and Unwatched videos and Duplicate files 
 
-[DESIGN DOCUMENTS](https://github.com/AravindSh/In-One-File-Manager/tree/master/Design-Documents-pdf)
+
+[Here are the Design Documents](https://github.com/AravindSh/In-One-File-Manager/tree/master/Design-Documents-pdf)
