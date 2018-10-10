@@ -16,3 +16,5 @@ DESCRIPTION:
 -> Listing Vaguely Named PDF’s and Renaming Suggestions using Title Extraction
 
 -> Listing Watched and Unwatched videos and Duplicate files 
+
+[DESIGN DOCUMENTS](https://github.com/AravindSh/In-One-File-Manager/tree/master/Design-Documents-pdf)
