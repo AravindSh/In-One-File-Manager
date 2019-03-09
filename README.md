@@ -4,7 +4,7 @@
 Desktop File Manager for Windows
 
 ## TECHNOLOGIES USED: ## 
-Java, JavaFX, iText, Jsoup, Netbeans IDE
+Java, JavaFX, iText, Jsoup, SQLite, Netbeans IDE
 
 ## DESCRIPTION ##
 
